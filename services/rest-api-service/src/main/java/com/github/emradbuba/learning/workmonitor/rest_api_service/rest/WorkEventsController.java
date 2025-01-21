@@ -17,7 +17,7 @@ public class WorkEventsController {
     private final WorkEventService workEventService;
 
     @PostMapping("/event/{event_string}")
-    public void startWork(@PathVariable("event_string") String eventString) {
+    public void receiveEvent(@PathVariable("event_string") String eventString) {
 
        log.info("Received POST with event string --> <{}>", eventString);
 
